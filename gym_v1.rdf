@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology/"
+     xml:base="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Adult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#AdultMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#AdultMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Annual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Annual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Membership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Barbell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Barbell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FreeWeights"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#BarbellBenchPress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#BarbellBenchPress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#BarbellDeadlift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#BarbellDeadlift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#BenchPress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#BenchPress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Cadillac -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Cadillac">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Cardio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Cardio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#CardioEquipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#CardioEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#CardioWorkout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#CardioWorkout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WorkoutType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#ChestPress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#ChestPress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Crunch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Crunch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Curl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Curl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Cycling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Cycling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Deadlift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Deadlift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Dumbbell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Dumbbell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FreeWeights"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#DumbbellDeadlift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#DumbbellDeadlift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Elliptical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Elliptical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#CardioEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#EnduranceTraining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#EnduranceTraining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WorkoutType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Family">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Membership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FitnessGoal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FitnessGoal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FlexibilityTraining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FlexibilityTraining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WorkoutType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FoamRoller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FoamRoller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FreeWeights -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FreeWeights">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StrengthTrainingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GroupClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GroupClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymEquipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymEquipment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymFacility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymInstructor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymInstructor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymMember"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymServices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymServices"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#HIIT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#HIIT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WorkoutType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#ImproveEndurance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#ImproveEndurance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FitnessGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#IncreaseFlexibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#IncreaseFlexibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FitnessGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Kettlebell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Kettlebell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FreeWeights"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#LatMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#LatMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#LateralRaise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#LateralRaise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#LegPress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#LegPress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#LockerRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#LockerRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Membership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Membership"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Monthly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Monthly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Membership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#MuscleGain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#MuscleGain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FitnessGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PersonalTrainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PersonalTrainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymInstructor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PersonalTraining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PersonalTraining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Physiotherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Physiotherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Pilates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Pilates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesEquipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesInstructor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesInstructor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymInstructor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Plank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Plank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Pullup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Pullup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Pushup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Pushup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Reception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Reception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Reformer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Reformer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Rehabilitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Rehabilitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FitnessGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#RehabilitationSpecialist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#RehabilitationSpecialist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymInstructor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#ResistanceBands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#ResistanceBands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#RowingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#RowingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#CardioEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Running -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Running">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Senior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Senior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#SeniorMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#SeniorMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#SmithMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#SmithMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Squat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Squat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StairClimber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StairClimber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#CardioEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StationaryBike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StationaryBike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#CardioEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StrengthTraining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StrengthTraining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WorkoutType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StrengthTrainingEquipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StrengthTrainingEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Stretching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Stretching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Exercises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StretchingStrap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StretchingStrap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StudentMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StudentMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StudentMembership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StudentMembership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Membership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Treadmill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Treadmill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#CardioEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Trimestral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Trimestral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#Membership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#FitnessGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#StrengthTrainingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WeightRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#GymFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WorkoutType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#WorkoutType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#YogaMat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#YogaMat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#PilatesEquipment"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
