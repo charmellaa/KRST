@@ -12,26 +12,9 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="krst-gym-ontology" IRI="http://www.semanticweb.org/carmella/ontologies/2024/9/krst-gym-ontology#"/>
     <Declaration>
         <Class IRI="#AdultMember"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Annual"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Barbell"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BenchPress"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BroSplit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cadillac"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cardio"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CardioEquipment"/>
@@ -40,25 +23,7 @@
         <Class IRI="#CardioExercises"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CardioWorkout"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ChestPress"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cycling"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dumbbell"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Elliptical"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Endurance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EnduranceTraining"/>
+        <Class IRI="#City"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Exercises"/>
@@ -67,19 +32,7 @@
         <Class IRI="#FitnessGoal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Flexibility"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FlexibilityTraining"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FoamRoller"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#FreeWeights"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FullBody"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GroupClass"/>
@@ -103,28 +56,7 @@
         <Class IRI="#GymServices"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Kettlebell"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LatMachine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LegPress"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LockerRoom"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Membership"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Monthly"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MuscleFocus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PPL"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
@@ -142,58 +74,13 @@
         <Class IRI="#Physiotherapy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pilates"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PilatesClass"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PilatesEquipment"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PilatesInstructor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PushPull"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Reception"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Reformer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rehabilitation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ResistanceBands"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rowing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RowingMachine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Running"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ScheduleSplit"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SeniorMember"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SmithMachine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#StairClimber"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#StationaryBike"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#StrengthTraining"/>
+        <Class IRI="#StrengthExercises"/>
     </Declaration>
     <Declaration>
         <Class IRI="#StrengthTrainingEquipment"/>
@@ -202,37 +89,13 @@
         <Class IRI="#Stretching"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StretchingStrap"/>
+        <Class IRI="#StretchingEquipment"/>
     </Declaration>
     <Declaration>
         <Class IRI="#StudentMember"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StudentMembership"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Treadmill"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Trimestral"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UpperLower"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WeightFocus"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#WeightMachine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WeightRoom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Workout"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#YogaMat"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#attendsClass"/>
@@ -262,9 +125,6 @@
         <ObjectProperty IRI="#includesExercise"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#includesWorkout"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#involvesEquipment"/>
     </Declaration>
     <Declaration>
@@ -277,10 +137,25 @@
         <ObjectProperty IRI="#isLedBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOfferedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isPartOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#leads"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#offersMembership"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#physioBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#providesService"/>
@@ -289,7 +164,7 @@
         <ObjectProperty IRI="#providesTraining"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#teachesPilates"/>
+        <ObjectProperty IRI="#trainingProvidedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#worksAt"/>
@@ -298,13 +173,7 @@
         <DataProperty IRI="#age"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#annualFee"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#caloriesBurned"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#cityLocation"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#classDay"/>
@@ -313,13 +182,19 @@
         <DataProperty IRI="#difficulty"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#distance"/>
+        <DataProperty IRI="#discountSenior"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#durationInHrs"/>
+        <DataProperty IRI="#discountStudent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#distanceInKm"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#durationInMins"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#equipWeightInKg"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#experienceLevel"/>
@@ -331,63 +206,554 @@
         <DataProperty IRI="#height"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#membershipFee"/>
+        <DataProperty IRI="#membershipFeeInEuro"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#membershipRenewalDate"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#membershipStartDate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#monthlyFee"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#programDuration"/>
+        <DataProperty IRI="#programDurationInDays"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#repCount"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#resistanceLevel"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#setCount"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#speed"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#studentFee"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#trimestralFee"/>
+        <DataProperty IRI="#speedInKmH"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlessandroBianchi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ancona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Annual_JW_Roma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AntonioMancini"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnytimeFitness_Firenze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnytimeFitness_Milano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnytimeFitness_Roma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aosta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BarbellFrontSquat_4x6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barbell_15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barbell_20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barbell_25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bari"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BenchPress_4x10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BenchPress_4x6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BenchpressMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bodybuilding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bologna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BroSplit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cadillac"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cagliari"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Campobasso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cardio_Endurance_Training"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CardiovascularEndurance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CarlaMoretti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CatCowStretch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catanzaro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChestOpenerStretch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChestStretch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChiaraRicci"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Core_Stability_Training"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CrossFitClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cycling_20_15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DanceClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deadlift_3x5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DumbbellChestPress_4x10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DumbbellSet_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DumbbellSet_12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DumbbellSet_40"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DumbbellSet_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DumbbellShoulderPress_3x6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElenaMartini"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElenaRossi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EliteGym_Palermo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EliteGym_Roma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EliteGym_Torino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EllipticalMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elliptical_8_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FatBurning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FedericaRomano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FedericoBianco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Firenze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FitActive_Bologna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FitActive_Firenze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FitActive_Napoli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FitActive_Roma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FitnessFirst_Milano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FitnessFirst_Torino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flexibility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flexibility_Mobility_Training"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FoamRoller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrancescoLuca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FullBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Functional_Training"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Genova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GiovanniLombardi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GiuliaVerdi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HamstringStretch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#High_Intensity_Training"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HipFlexorStretch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HipThrust_3x10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypertrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IconPalestre_Firenze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IconPalestre_Palermo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InclineBenchPressMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InclineBenchPress_4x10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InjuryRecovery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InnerThighStretch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JumpRope"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JumpRope_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JungleWellness_Bologna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JungleWellness_Roma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KarateClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KettlebellGobletSquat_4x6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KettlebellSwing_4x15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kettlebell_16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kettlebell_24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KickboxingClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LAquila"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LatMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LatPullDown_3x10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LateralRaises_3x12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LegPress_4x8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LegpressMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LorenzoTosi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LucaBianchi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LucaDeSantis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LuciaFerrari"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lunges_3x10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LyingFigureFour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MarcoGalli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MarcoRossi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MariaNeri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MartaGori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MatteoRinaldi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Milano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monthly_AT_Milano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MuscleGain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Napoli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OrthopedicTherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OverheadPress_3x8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PPL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palermo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perugia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pescara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PilatesClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PilatesRing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plates_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plates_2.5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plates_30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plates_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PostSurgicalRehabilitation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PostureCorrection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Potenza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PowerLifting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PushPull"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reformer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResistanceBands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiccardoValli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RobertaConti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RobertoSantoro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RowingMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rowing_15_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rowing_2_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Running_10_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SaraFerrari"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeatedForwardBend"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SilviaEsposito"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SmithMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SofiaFontana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpineStretch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Squat_4x8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Squat_5x5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StairClimbing_3_0.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stairmaster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StationeryBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Torino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Treadmill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trieste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UpperLower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ValentinaCosta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Venezia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeightLoss"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weight_Management"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YogaClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YogaMat"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#AdultMember"/>
         <ObjectIntersectionOf>
             <Class IRI="#GymMember"/>
+            <ObjectIntersectionOf>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#age"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#age"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasMembership"/>
+                <Class IRI="#Membership"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CardioExercises"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Exercises"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#age"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
+                <DataProperty IRI="#distanceInKm"/>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#speedInKmH"/>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
             </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Annual"/>
+        <Class IRI="#FreeWeights"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Membership"/>
+            <Class IRI="#StrengthTrainingEquipment"/>
             <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#annualFee"/>
-                <Datatype abbreviatedIRI="xsd:float"/>
+                <DataProperty IRI="#equipWeightInKg"/>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
             </DataExactCardinality>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -415,69 +781,116 @@
         <Class IRI="#GymInstructor"/>
         <ObjectIntersectionOf>
             <Class IRI="#Person"/>
-            <ObjectSomeValuesFrom>
+            <ObjectExactCardinality cardinality="1">
                 <ObjectProperty IRI="#worksAt"/>
                 <Class IRI="#GymFacility"/>
-            </ObjectSomeValuesFrom>
+            </ObjectExactCardinality>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#GymMember"/>
         <ObjectIntersectionOf>
             <Class IRI="#Person"/>
-            <ObjectSomeValuesFrom>
+            <ObjectExactCardinality cardinality="1">
                 <ObjectProperty IRI="#hasMembership"/>
                 <Class IRI="#Membership"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
                 <ObjectProperty IRI="#isEnrolledIn"/>
                 <Class IRI="#GymFacility"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PersonalTrainer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#GymInstructor"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#providesTraining"/>
+                <Class IRI="#PersonalTraining"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Monthly"/>
+        <Class IRI="#PersonalTraining"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Membership"/>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#monthlyFee"/>
-                <Datatype abbreviatedIRI="xsd:float"/>
-            </DataExactCardinality>
+            <Class IRI="#GymServices"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#trainingProvidedBy"/>
+                <Class IRI="#PersonalTrainer"/>
+            </ObjectExactCardinality>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#PilatesClass"/>
+        <Class IRI="#PhysioSpecialist"/>
         <ObjectIntersectionOf>
-            <Class IRI="#GroupClass"/>
+            <Class IRI="#GymInstructor"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPhysio"/>
+                <Class IRI="#Physiotherapy"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Physiotherapy"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#GymServices"/>
             <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#isLedBy"/>
-                <Class IRI="#PilatesInstructor"/>
+                <ObjectProperty IRI="#physioBy"/>
+                <Class IRI="#PhysioSpecialist"/>
             </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ScheduleSplit"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#includesExercise"/>
+                <Class IRI="#Exercises"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAssignedBy"/>
+                <Class IRI="#GymInstructor"/>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#SeniorMember"/>
         <ObjectIntersectionOf>
             <Class IRI="#GymMember"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasMembership"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Membership"/>
+                    <DataExactCardinality cardinality="1">
+                        <DataProperty IRI="#discountSenior"/>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                    </DataExactCardinality>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#age"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#StrengthTraining"/>
+        <Class IRI="#StrengthExercises"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Workout"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#involvesEquipment"/>
-                <Class IRI="#StrengthTrainingEquipment"/>
-            </ObjectSomeValuesFrom>
+            <Class IRI="#Exercises"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#repCount"/>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#setCount"/>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+            </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -486,37 +899,23 @@
             <Class IRI="#GymMember"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasMembership"/>
-                <Class IRI="#StudentMembership"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Membership"/>
+                    <DataExactCardinality cardinality="1">
+                        <DataProperty IRI="#discountStudent"/>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                    </DataExactCardinality>
+                </ObjectIntersectionOf>
             </ObjectSomeValuesFrom>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#age"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
                         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#StudentMembership"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Membership"/>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#studentFee"/>
-                <Datatype abbreviatedIRI="xsd:float"/>
-            </DataExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Trimestral"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Membership"/>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#trimestralFee"/>
-                <Datatype abbreviatedIRI="xsd:float"/>
-            </DataExactCardinality>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
@@ -524,128 +923,118 @@
         <Class IRI="#GymMember"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Annual"/>
-        <Class IRI="#Membership"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Barbell"/>
-        <Class IRI="#FreeWeights"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BenchPress"/>
-        <Class IRI="#WeightMachine"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BroSplit"/>
-        <Class IRI="#ScheduleSplit"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cadillac"/>
-        <Class IRI="#PilatesEquipment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cardio"/>
-        <Class IRI="#GymFacility"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CardioEquipment"/>
         <Class IRI="#GymEquipment"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CardioExercises"/>
-        <Class IRI="#Exercises"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#CardiovascularEndurance"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CardioWorkout"/>
-        <Class IRI="#Workout"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ChestPress"/>
-        <Class IRI="#WeightMachine"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cycling"/>
         <Class IRI="#CardioExercises"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#FatBurning"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Dumbbell"/>
-        <Class IRI="#FreeWeights"/>
+        <Class IRI="#CardioExercises"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#WeightLoss"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Elliptical"/>
-        <Class IRI="#CardioEquipment"/>
+        <Class IRI="#CardioExercises"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#involvesEquipment"/>
+            <Class IRI="#CardioEquipment"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Endurance"/>
-        <Class IRI="#FitnessGoal"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EnduranceTraining"/>
-        <Class IRI="#Workout"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Flexibility"/>
-        <Class IRI="#FitnessGoal"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FlexibilityTraining"/>
-        <Class IRI="#Workout"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FoamRoller"/>
-        <Class IRI="#PilatesEquipment"/>
+        <Class IRI="#Exercises"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#focusesOn"/>
+            <Class IRI="#FitnessGoal"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FreeWeights"/>
         <Class IRI="#StrengthTrainingEquipment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FullBody"/>
-        <Class IRI="#ScheduleSplit"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#GroupClass"/>
-        <Class IRI="#GymServices"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#GroupInstructor"/>
         <Class IRI="#GymInstructor"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GymFacility"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#City"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GymInstructor"/>
-        <Class IRI="#Person"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#coachesMember"/>
+            <Class IRI="#GymMember"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GymInstructor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#providesService"/>
+            <Class IRI="#GymServices"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GymMember"/>
         <Class IRI="#Person"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Kettlebell"/>
-        <Class IRI="#FreeWeights"/>
+        <Class IRI="#GymMember"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGoal"/>
+            <Class IRI="#FitnessGoal"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LatMachine"/>
-        <Class IRI="#WeightMachine"/>
+        <Class IRI="#GymMember"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTrainer"/>
+            <Class IRI="#GymInstructor"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LegPress"/>
-        <Class IRI="#WeightMachine"/>
+        <Class IRI="#GymMember"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#weight"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LockerRoom"/>
-        <Class IRI="#GymFacility"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Monthly"/>
         <Class IRI="#Membership"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#membershipFeeInEuro"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MuscleFocus"/>
-        <Class IRI="#FitnessGoal"/>
+        <Class IRI="#Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#age"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PPL"/>
-        <Class IRI="#ScheduleSplit"/>
+        <Class IRI="#Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#gender"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PersonalTrainer"/>
@@ -664,72 +1053,50 @@
         <Class IRI="#GymServices"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pilates"/>
-        <Class IRI="#GymFacility"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PilatesClass"/>
-        <Class IRI="#GroupClass"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PilatesEquipment"/>
-        <Class IRI="#GymEquipment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PilatesInstructor"/>
-        <Class IRI="#GroupInstructor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PushPull"/>
-        <Class IRI="#ScheduleSplit"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reception"/>
-        <Class IRI="#GymFacility"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reformer"/>
-        <Class IRI="#PilatesEquipment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rehabilitation"/>
-        <Class IRI="#FitnessGoal"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ResistanceBands"/>
-        <Class IRI="#PilatesEquipment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rowing"/>
-        <Class IRI="#CardioExercises"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RowingMachine"/>
-        <Class IRI="#CardioEquipment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Running"/>
-        <Class IRI="#CardioExercises"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SeniorMember"/>
         <Class IRI="#GymMember"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SmithMachine"/>
-        <Class IRI="#WeightMachine"/>
+        <Class IRI="#StrengthExercises"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#Hypertrophy"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StairClimber"/>
-        <Class IRI="#CardioEquipment"/>
+        <Class IRI="#StrengthExercises"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#MuscleGain"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StationaryBike"/>
-        <Class IRI="#CardioEquipment"/>
+        <Class IRI="#StrengthExercises"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#PostureCorrection"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StrengthTraining"/>
-        <Class IRI="#Workout"/>
+        <Class IRI="#StrengthExercises"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#PowerLifting"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrengthExercises"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#WeightLoss"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StrengthExercises"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#involvesEquipment"/>
+            <Class IRI="#StrengthTrainingEquipment"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StrengthTrainingEquipment"/>
@@ -740,51 +1107,1519 @@
         <Class IRI="#Exercises"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StretchingStrap"/>
-        <Class IRI="#PilatesEquipment"/>
+        <Class IRI="#Stretching"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#Flexibility"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stretching"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#focusesOn"/>
+            <NamedIndividual IRI="#PostureCorrection"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StretchingEquipment"/>
+        <Class IRI="#GymEquipment"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StudentMember"/>
         <Class IRI="#GymMember"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StudentMembership"/>
-        <Class IRI="#Membership"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Treadmill"/>
-        <Class IRI="#CardioEquipment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Trimestral"/>
-        <Class IRI="#Membership"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UpperLower"/>
-        <Class IRI="#ScheduleSplit"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WeightFocus"/>
-        <Class IRI="#FitnessGoal"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#WeightMachine"/>
         <Class IRI="#StrengthTrainingEquipment"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WeightRoom"/>
-        <Class IRI="#GymFacility"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#YogaMat"/>
-        <Class IRI="#PilatesEquipment"/>
-    </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#Annual"/>
-        <Class IRI="#Monthly"/>
-        <Class IRI="#StudentMembership"/>
-        <Class IRI="#Trimestral"/>
+        <Class IRI="#AdultMember"/>
+        <Class IRI="#SeniorMember"/>
+        <Class IRI="#StudentMember"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CardioEquipment"/>
+        <Class IRI="#StrengthTrainingEquipment"/>
+        <Class IRI="#StretchingEquipment"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="#GymEquipment"/>
+        <Class IRI="#CardioEquipment"/>
+        <Class IRI="#StrengthTrainingEquipment"/>
+        <Class IRI="#StretchingEquipment"/>
+    </DisjointUnion>
+    <ClassAssertion>
+        <Class IRI="#AdultMember"/>
+        <NamedIndividual IRI="#AlessandroBianchi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Ancona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Membership"/>
+        <NamedIndividual IRI="#Annual_JW_Roma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorMember"/>
+        <NamedIndividual IRI="#AntonioMancini"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#AnytimeFitness_Firenze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#AnytimeFitness_Milano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#AnytimeFitness_Roma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Aosta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#BarbellFrontSquat_4x6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#Barbell_15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#Barbell_20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#Barbell_25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Bari"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#BenchPress_4x10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#BenchPress_4x6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightMachine"/>
+        <NamedIndividual IRI="#BenchpressMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTraining"/>
+        <NamedIndividual IRI="#Bodybuilding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Bologna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ScheduleSplit"/>
+        <NamedIndividual IRI="#BroSplit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StretchingEquipment"/>
+        <NamedIndividual IRI="#Cadillac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Cagliari"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Campobasso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTraining"/>
+        <NamedIndividual IRI="#Cardio_Endurance_Training"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FitnessGoal"/>
+        <NamedIndividual IRI="#CardiovascularEndurance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTrainer"/>
+        <NamedIndividual IRI="#CarlaMoretti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#CatCowStretch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Catanzaro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#ChestOpenerStretch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#ChestStretch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdultMember"/>
+        <NamedIndividual IRI="#ChiaraRicci"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTraining"/>
+        <NamedIndividual IRI="#Core_Stability_Training"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupClass"/>
+        <NamedIndividual IRI="#CrossFitClass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioExercises"/>
+        <NamedIndividual IRI="#Cycling_20_15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupClass"/>
+        <NamedIndividual IRI="#DanceClass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#Deadlift_3x5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#DumbbellChestPress_4x10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#DumbbellSet_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#DumbbellSet_12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#DumbbellSet_40"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#DumbbellSet_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#DumbbellShoulderPress_3x6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StudentMember"/>
+        <NamedIndividual IRI="#ElenaMartini"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupInstructor"/>
+        <NamedIndividual IRI="#ElenaRossi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#EliteGym_Palermo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#EliteGym_Roma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#EliteGym_Torino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioEquipment"/>
+        <NamedIndividual IRI="#EllipticalMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioExercises"/>
+        <NamedIndividual IRI="#Elliptical_8_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FitnessGoal"/>
+        <NamedIndividual IRI="#FatBurning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysioSpecialist"/>
+        <NamedIndividual IRI="#FedericaRomano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupInstructor"/>
+        <NamedIndividual IRI="#FedericoBianco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Firenze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#FitActive_Bologna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#FitActive_Firenze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#FitActive_Napoli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#FitActive_Roma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#FitnessFirst_Milano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#FitnessFirst_Torino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FitnessGoal"/>
+        <NamedIndividual IRI="#Flexibility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTraining"/>
+        <NamedIndividual IRI="#Flexibility_Mobility_Training"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StretchingEquipment"/>
+        <NamedIndividual IRI="#FoamRoller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StudentMember"/>
+        <NamedIndividual IRI="#FrancescoLuca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ScheduleSplit"/>
+        <NamedIndividual IRI="#FullBody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTraining"/>
+        <NamedIndividual IRI="#Functional_Training"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Genova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysioSpecialist"/>
+        <NamedIndividual IRI="#GiovanniLombardi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdultMember"/>
+        <NamedIndividual IRI="#GiuliaVerdi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#HamstringStretch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTraining"/>
+        <NamedIndividual IRI="#High_Intensity_Training"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#HipFlexorStretch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#HipThrust_3x10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FitnessGoal"/>
+        <NamedIndividual IRI="#Hypertrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#IconPalestre_Firenze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#IconPalestre_Palermo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightMachine"/>
+        <NamedIndividual IRI="#InclineBenchPressMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#InclineBenchPress_4x10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Physiotherapy"/>
+        <NamedIndividual IRI="#InjuryRecovery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#InnerThighStretch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioEquipment"/>
+        <NamedIndividual IRI="#JumpRope"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioExercises"/>
+        <NamedIndividual IRI="#JumpRope_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#JungleWellness_Bologna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GymFacility"/>
+        <NamedIndividual IRI="#JungleWellness_Roma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupClass"/>
+        <NamedIndividual IRI="#KarateClass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#KettlebellGobletSquat_4x6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#KettlebellSwing_4x15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#Kettlebell_16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#Kettlebell_24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupClass"/>
+        <NamedIndividual IRI="#KickboxingClass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#LAquila"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightMachine"/>
+        <NamedIndividual IRI="#LatMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#LatPullDown_3x10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#LateralRaises_3x12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#LegPress_4x8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightMachine"/>
+        <NamedIndividual IRI="#LegpressMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdultMember"/>
+        <NamedIndividual IRI="#LorenzoTosi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTrainer"/>
+        <NamedIndividual IRI="#LucaBianchi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysioSpecialist"/>
+        <NamedIndividual IRI="#LucaDeSantis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupInstructor"/>
+        <NamedIndividual IRI="#LuciaFerrari"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#Lunges_3x10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#LyingFigureFour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupInstructor"/>
+        <NamedIndividual IRI="#MarcoGalli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdultMember"/>
+        <NamedIndividual IRI="#MarcoRossi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#MarcoRossi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorMember"/>
+        <NamedIndividual IRI="#MariaNeri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysioSpecialist"/>
+        <NamedIndividual IRI="#MartaGori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTrainer"/>
+        <NamedIndividual IRI="#MatteoRinaldi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Milano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Membership"/>
+        <NamedIndividual IRI="#Monthly_AT_Milano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FitnessGoal"/>
+        <NamedIndividual IRI="#MuscleGain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Napoli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Physiotherapy"/>
+        <NamedIndividual IRI="#OrthopedicTherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#OverheadPress_3x8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ScheduleSplit"/>
+        <NamedIndividual IRI="#PPL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Palermo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Perugia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Pescara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupClass"/>
+        <NamedIndividual IRI="#PilatesClass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StretchingEquipment"/>
+        <NamedIndividual IRI="#PilatesRing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#Plates_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#Plates_2.5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#Plates_30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FreeWeights"/>
+        <NamedIndividual IRI="#Plates_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Physiotherapy"/>
+        <NamedIndividual IRI="#PostSurgicalRehabilitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FitnessGoal"/>
+        <NamedIndividual IRI="#PostureCorrection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Potenza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FitnessGoal"/>
+        <NamedIndividual IRI="#PowerLifting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ScheduleSplit"/>
+        <NamedIndividual IRI="#PushPull"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StretchingEquipment"/>
+        <NamedIndividual IRI="#Reformer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StretchingEquipment"/>
+        <NamedIndividual IRI="#ResistanceBands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdultMember"/>
+        <NamedIndividual IRI="#RiccardoValli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysioSpecialist"/>
+        <NamedIndividual IRI="#RobertaConti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTrainer"/>
+        <NamedIndividual IRI="#RobertoSantoro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Roma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioEquipment"/>
+        <NamedIndividual IRI="#RowingMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioExercises"/>
+        <NamedIndividual IRI="#Rowing_15_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioExercises"/>
+        <NamedIndividual IRI="#Rowing_2_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioExercises"/>
+        <NamedIndividual IRI="#Running_10_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#SaraFerrari"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTrainer"/>
+        <NamedIndividual IRI="#SaraFerrari"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#SeatedForwardBend"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTrainer"/>
+        <NamedIndividual IRI="#SilviaEsposito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightMachine"/>
+        <NamedIndividual IRI="#SmithMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdultMember"/>
+        <NamedIndividual IRI="#SofiaFontana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#SpineStretch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#Squat_4x8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StrengthExercises"/>
+        <NamedIndividual IRI="#Squat_5x5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioExercises"/>
+        <NamedIndividual IRI="#StairClimbing_3_0.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioEquipment"/>
+        <NamedIndividual IRI="#Stairmaster"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioEquipment"/>
+        <NamedIndividual IRI="#StationeryBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorMember"/>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Torino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CardioEquipment"/>
+        <NamedIndividual IRI="#Treadmill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Trento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Trieste"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ScheduleSplit"/>
+        <NamedIndividual IRI="#UpperLower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupInstructor"/>
+        <NamedIndividual IRI="#ValentinaCosta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Venezia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FitnessGoal"/>
+        <NamedIndividual IRI="#WeightLoss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalTraining"/>
+        <NamedIndividual IRI="#Weight_Management"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroupClass"/>
+        <NamedIndividual IRI="#YogaClass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StretchingEquipment"/>
+        <NamedIndividual IRI="#YogaMat"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ancona"/>
+        <NamedIndividual IRI="#Aosta"/>
+        <NamedIndividual IRI="#Bari"/>
+        <NamedIndividual IRI="#Bologna"/>
+        <NamedIndividual IRI="#Cagliari"/>
+        <NamedIndividual IRI="#Campobasso"/>
+        <NamedIndividual IRI="#Catanzaro"/>
+        <NamedIndividual IRI="#Firenze"/>
+        <NamedIndividual IRI="#Genova"/>
+        <NamedIndividual IRI="#LAquila"/>
+        <NamedIndividual IRI="#Milano"/>
+        <NamedIndividual IRI="#Napoli"/>
+        <NamedIndividual IRI="#Palermo"/>
+        <NamedIndividual IRI="#Perugia"/>
+        <NamedIndividual IRI="#Pescara"/>
+        <NamedIndividual IRI="#Potenza"/>
+        <NamedIndividual IRI="#Roma"/>
+        <NamedIndividual IRI="#Torino"/>
+        <NamedIndividual IRI="#Trento"/>
+        <NamedIndividual IRI="#Trieste"/>
+        <NamedIndividual IRI="#Venezia"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Cycling_20_15"/>
+        <NamedIndividual IRI="#Elliptical_8_4"/>
+        <NamedIndividual IRI="#JumpRope_2"/>
+        <NamedIndividual IRI="#Rowing_2_2"/>
+        <NamedIndividual IRI="#Running_10_5"/>
+        <NamedIndividual IRI="#StairClimbing_3_0.2"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#MarcoRossi"/>
+        <NamedIndividual IRI="#SaraFerrari"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#MarcoRossi"/>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGoal"/>
+        <NamedIndividual IRI="#AlessandroBianchi"/>
+        <NamedIndividual IRI="#Hypertrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMembership"/>
+        <NamedIndividual IRI="#AlessandroBianchi"/>
+        <NamedIndividual IRI="#Monthly_AT_Milano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isEnrolledIn"/>
+        <NamedIndividual IRI="#AlessandroBianchi"/>
+        <NamedIndividual IRI="#AnytimeFitness_Milano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#AnytimeFitness_Firenze"/>
+        <NamedIndividual IRI="#Firenze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#AnytimeFitness_Milano"/>
+        <NamedIndividual IRI="#Milano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offersMembership"/>
+        <NamedIndividual IRI="#AnytimeFitness_Milano"/>
+        <NamedIndividual IRI="#Monthly_AT_Milano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#AnytimeFitness_Roma"/>
+        <NamedIndividual IRI="#Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#BarbellFrontSquat_4x6"/>
+        <NamedIndividual IRI="#Barbell_20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#BarbellFrontSquat_4x6"/>
+        <NamedIndividual IRI="#Plates_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#BenchPress_4x10"/>
+        <NamedIndividual IRI="#Barbell_20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#BenchPress_4x10"/>
+        <NamedIndividual IRI="#BenchpressMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#BenchPress_4x10"/>
+        <NamedIndividual IRI="#Plates_30"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#BenchPress_4x6"/>
+        <NamedIndividual IRI="#Barbell_20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#BenchPress_4x6"/>
+        <NamedIndividual IRI="#BenchpressMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#BenchPress_4x6"/>
+        <NamedIndividual IRI="#Plates_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#CatCowStretch"/>
+        <NamedIndividual IRI="#YogaMat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#ChestOpenerStretch"/>
+        <NamedIndividual IRI="#FoamRoller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#ChestStretch"/>
+        <NamedIndividual IRI="#ResistanceBands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Cycling_20_15"/>
+        <NamedIndividual IRI="#StationeryBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Deadlift_3x5"/>
+        <NamedIndividual IRI="#Barbell_20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Deadlift_3x5"/>
+        <NamedIndividual IRI="#Plates_30"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#DumbbellChestPress_4x10"/>
+        <NamedIndividual IRI="#DumbbellSet_12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#DumbbellShoulderPress_3x6"/>
+        <NamedIndividual IRI="#DumbbellSet_40"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#EliteGym_Palermo"/>
+        <NamedIndividual IRI="#Palermo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#EliteGym_Roma"/>
+        <NamedIndividual IRI="#Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#EliteGym_Torino"/>
+        <NamedIndividual IRI="#Torino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Elliptical_8_4"/>
+        <NamedIndividual IRI="#EllipticalMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#FitActive_Bologna"/>
+        <NamedIndividual IRI="#Bologna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#FitActive_Firenze"/>
+        <NamedIndividual IRI="#Firenze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#FitActive_Napoli"/>
+        <NamedIndividual IRI="#Napoli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#FitActive_Roma"/>
+        <NamedIndividual IRI="#Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#FitnessFirst_Milano"/>
+        <NamedIndividual IRI="#Milano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#FitnessFirst_Torino"/>
+        <NamedIndividual IRI="#Torino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#HamstringStretch"/>
+        <NamedIndividual IRI="#FoamRoller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#HipFlexorStretch"/>
+        <NamedIndividual IRI="#YogaMat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#HipThrust_3x10"/>
+        <NamedIndividual IRI="#Barbell_20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#HipThrust_3x10"/>
+        <NamedIndividual IRI="#Plates_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#IconPalestre_Firenze"/>
+        <NamedIndividual IRI="#Firenze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#IconPalestre_Palermo"/>
+        <NamedIndividual IRI="#Palermo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#InclineBenchPress_4x10"/>
+        <NamedIndividual IRI="#Barbell_15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#InclineBenchPress_4x10"/>
+        <NamedIndividual IRI="#InclineBenchPressMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#InclineBenchPress_4x10"/>
+        <NamedIndividual IRI="#Plates_10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#InnerThighStretch"/>
+        <NamedIndividual IRI="#PilatesRing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#JumpRope_2"/>
+        <NamedIndividual IRI="#JumpRope"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#JungleWellness_Bologna"/>
+        <NamedIndividual IRI="#Bologna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#JungleWellness_Roma"/>
+        <NamedIndividual IRI="#Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#offersMembership"/>
+        <NamedIndividual IRI="#JungleWellness_Roma"/>
+        <NamedIndividual IRI="#Annual_JW_Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#KettlebellGobletSquat_4x6"/>
+        <NamedIndividual IRI="#Kettlebell_24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#KettlebellSwing_4x15"/>
+        <NamedIndividual IRI="#Kettlebell_16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#LatPullDown_3x10"/>
+        <NamedIndividual IRI="#LatMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#LateralRaises_3x12"/>
+        <NamedIndividual IRI="#DumbbellSet_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#LegPress_4x8"/>
+        <NamedIndividual IRI="#LegpressMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#LyingFigureFour"/>
+        <NamedIndividual IRI="#YogaMat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGoal"/>
+        <NamedIndividual IRI="#MarcoRossi"/>
+        <NamedIndividual IRI="#WeightLoss"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMembership"/>
+        <NamedIndividual IRI="#MarcoRossi"/>
+        <NamedIndividual IRI="#Annual_JW_Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTrainer"/>
+        <NamedIndividual IRI="#MarcoRossi"/>
+        <NamedIndividual IRI="#SaraFerrari"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isEnrolledIn"/>
+        <NamedIndividual IRI="#MarcoRossi"/>
+        <NamedIndividual IRI="#JungleWellness_Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#OverheadPress_3x8"/>
+        <NamedIndividual IRI="#Barbell_15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#OverheadPress_3x8"/>
+        <NamedIndividual IRI="#Plates_2.5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Rowing_15_8"/>
+        <NamedIndividual IRI="#RowingMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Rowing_2_2"/>
+        <NamedIndividual IRI="#RowingMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Running_10_5"/>
+        <NamedIndividual IRI="#Treadmill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesTraining"/>
+        <NamedIndividual IRI="#SaraFerrari"/>
+        <NamedIndividual IRI="#High_Intensity_Training"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksAt"/>
+        <NamedIndividual IRI="#SaraFerrari"/>
+        <NamedIndividual IRI="#JungleWellness_Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#SeatedForwardBend"/>
+        <NamedIndividual IRI="#YogaMat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#SpineStretch"/>
+        <NamedIndividual IRI="#Reformer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Squat_4x8"/>
+        <NamedIndividual IRI="#Barbell_20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Squat_4x8"/>
+        <NamedIndividual IRI="#Plates_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#Squat_5x5"/>
+        <NamedIndividual IRI="#SmithMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#involvesEquipment"/>
+        <NamedIndividual IRI="#StairClimbing_3_0.2"/>
+        <NamedIndividual IRI="#Stairmaster"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGoal"/>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+        <NamedIndividual IRI="#WeightLoss"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMembership"/>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+        <NamedIndividual IRI="#Annual_JW_Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTrainer"/>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+        <NamedIndividual IRI="#SaraFerrari"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#AlessandroBianchi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#AlessandroBianchi"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#AlessandroBianchi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">74.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#discountSenior"/>
+        <NamedIndividual IRI="#Annual_JW_Roma"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#discountStudent"/>
+        <NamedIndividual IRI="#Annual_JW_Roma"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#membershipFeeInEuro"/>
+        <NamedIndividual IRI="#Annual_JW_Roma"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#BarbellFrontSquat_4x6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#BarbellFrontSquat_4x6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#Barbell_15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#Barbell_20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#Barbell_25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#BenchPress_4x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#BenchPress_4x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#BenchPress_4x6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#BenchPress_4x6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programDurationInDays"/>
+        <NamedIndividual IRI="#CardiovascularEndurance"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanceInKm"/>
+        <NamedIndividual IRI="#Cycling_20_15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#speedInKmH"/>
+        <NamedIndividual IRI="#Cycling_20_15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#Deadlift_3x5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#Deadlift_3x5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#DumbbellChestPress_4x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#DumbbellChestPress_4x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#DumbbellSet_10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#DumbbellSet_12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#DumbbellSet_40"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#DumbbellSet_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#DumbbellShoulderPress_3x6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#DumbbellShoulderPress_3x6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanceInKm"/>
+        <NamedIndividual IRI="#Elliptical_8_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#speedInKmH"/>
+        <NamedIndividual IRI="#Elliptical_8_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programDurationInDays"/>
+        <NamedIndividual IRI="#FatBurning"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programDurationInDays"/>
+        <NamedIndividual IRI="#Flexibility"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#HipThrust_3x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#HipThrust_3x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programDurationInDays"/>
+        <NamedIndividual IRI="#Hypertrophy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanceInKm"/>
+        <NamedIndividual IRI="#JumpRope_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#speedInKmH"/>
+        <NamedIndividual IRI="#JumpRope_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#KettlebellGobletSquat_4x6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#KettlebellGobletSquat_4x6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#KettlebellSwing_4x15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#KettlebellSwing_4x15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#Kettlebell_16"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">16.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#Kettlebell_24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#LatPullDown_3x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#LatPullDown_3x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#LateralRaises_3x12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#LateralRaises_3x12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#LegPress_4x8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#LegPress_4x8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#Lunges_3x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#Lunges_3x10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#MarcoRossi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#MarcoRossi"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#MarcoRossi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">72.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#discountSenior"/>
+        <NamedIndividual IRI="#Monthly_AT_Milano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#discountStudent"/>
+        <NamedIndividual IRI="#Monthly_AT_Milano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#membershipFeeInEuro"/>
+        <NamedIndividual IRI="#Monthly_AT_Milano"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programDurationInDays"/>
+        <NamedIndividual IRI="#MuscleGain"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">360</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#OverheadPress_3x8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#OverheadPress_3x8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#Plates_10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#Plates_2.5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#Plates_30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <NamedIndividual IRI="#Plates_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programDurationInDays"/>
+        <NamedIndividual IRI="#PostureCorrection"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programDurationInDays"/>
+        <NamedIndividual IRI="#PowerLifting"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanceInKm"/>
+        <NamedIndividual IRI="#Rowing_15_8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#speedInKmH"/>
+        <NamedIndividual IRI="#Rowing_15_8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanceInKm"/>
+        <NamedIndividual IRI="#Rowing_2_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#speedInKmH"/>
+        <NamedIndividual IRI="#Rowing_2_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanceInKm"/>
+        <NamedIndividual IRI="#Running_10_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#speedInKmH"/>
+        <NamedIndividual IRI="#Running_10_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#SaraFerrari"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#SaraFerrari"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#Squat_4x8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#Squat_4x8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#repCount"/>
+        <NamedIndividual IRI="#Squat_5x5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#setCount"/>
+        <NamedIndividual IRI="#Squat_5x5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#distanceInKm"/>
+        <NamedIndividual IRI="#StairClimbing_3_0.2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#speedInKmH"/>
+        <NamedIndividual IRI="#StairClimbing_3_0.2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#StefaniaErcole"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">68.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programDurationInDays"/>
+        <NamedIndividual IRI="#WeightLoss"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">90</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#attendsClass"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -798,16 +2633,32 @@
         <ObjectProperty IRI="#isPartOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLedBy"/>
+        <ObjectProperty IRI="#providedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOfferedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#leads"/>
         <ObjectProperty IRI="#providesService"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#offersMembership"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#physioBy"/>
+        <ObjectProperty IRI="#providedBy"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#providesTraining"/>
         <ObjectProperty IRI="#providesService"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#teachesPilates"/>
-        <ObjectProperty IRI="#leads"/>
+        <ObjectProperty IRI="#trainingProvidedBy"/>
+        <ObjectProperty IRI="#providedBy"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#worksAt"/>
@@ -818,8 +2669,24 @@
         <ObjectProperty IRI="#hasTrainer"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPhysio"/>
+        <ObjectProperty IRI="#physioBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#isLedBy"/>
         <ObjectProperty IRI="#leads"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isOfferedBy"/>
+        <ObjectProperty IRI="#offersMembership"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#providedBy"/>
+        <ObjectProperty IRI="#providesService"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#providesTraining"/>
+        <ObjectProperty IRI="#trainingProvidedBy"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#attendsClass"/>
@@ -855,23 +2722,31 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#includesExercise"/>
-        <Class IRI="#Workout"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#includesWorkout"/>
         <Class IRI="#ScheduleSplit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#involvesEquipment"/>
-        <Class IRI="#Workout"/>
+        <Class IRI="#Exercises"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAssignedBy"/>
         <Class IRI="#ScheduleSplit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEnrolledIn"/>
+        <Class IRI="#GymMember"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isLedBy"/>
         <Class IRI="#GroupClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#GymFacility"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOfferedBy"/>
+        <Class IRI="#Membership"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPartOf"/>
@@ -882,6 +2757,18 @@
         <Class IRI="#GroupInstructor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#offersMembership"/>
+        <Class IRI="#GymFacility"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#physioBy"/>
+        <Class IRI="#Physiotherapy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#providedBy"/>
+        <Class IRI="#GymServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#providesService"/>
         <Class IRI="#GymInstructor"/>
     </ObjectPropertyDomain>
@@ -890,8 +2777,8 @@
         <Class IRI="#PersonalTrainer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#teachesPilates"/>
-        <Class IRI="#PilatesInstructor"/>
+        <ObjectProperty IRI="#trainingProvidedBy"/>
+        <Class IRI="#PersonalTraining"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#worksAt"/>
@@ -934,10 +2821,6 @@
         <Class IRI="#Exercises"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#includesWorkout"/>
-        <Class IRI="#Workout"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#involvesEquipment"/>
         <Class IRI="#GymEquipment"/>
     </ObjectPropertyRange>
@@ -954,12 +2837,32 @@
         <Class IRI="#GroupInstructor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOfferedBy"/>
+        <Class IRI="#GymFacility"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isPartOf"/>
         <Class IRI="#GymFacility"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#leads"/>
         <Class IRI="#GroupClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#offersMembership"/>
+        <Class IRI="#Membership"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#physioBy"/>
+        <Class IRI="#PhysioSpecialist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#providedBy"/>
+        <Class IRI="#GymInstructor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#providesService"/>
@@ -970,68 +2873,36 @@
         <Class IRI="#PersonalTraining"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#teachesPilates"/>
-        <Class IRI="#PilatesClass"/>
+        <ObjectProperty IRI="#trainingProvidedBy"/>
+        <Class IRI="#PersonalTrainer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#worksAt"/>
         <Class IRI="#GymFacility"/>
     </ObjectPropertyRange>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#annualFee"/>
-        <DataProperty IRI="#membershipFee"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#cityLocation"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#monthlyFee"/>
-        <DataProperty IRI="#membershipFee"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#studentFee"/>
-        <DataProperty IRI="#membershipFee"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#trimestralFee"/>
-        <DataProperty IRI="#membershipFee"/>
-    </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#age"/>
         <Class IRI="#Person"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#annualFee"/>
-        <Class IRI="#Annual"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#caloriesBurned"/>
-        <Class IRI="#Workout"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#cityLocation"/>
-        <Class IRI="#GymFacility"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#classDay"/>
         <Class IRI="#GroupClass"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#difficulty"/>
-        <Class IRI="#Workout"/>
+        <DataProperty IRI="#discountSenior"/>
+        <Class IRI="#Membership"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#distance"/>
+        <DataProperty IRI="#discountStudent"/>
+        <Class IRI="#Membership"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distanceInKm"/>
         <Class IRI="#CardioExercises"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#durationInHrs"/>
-        <Class IRI="#Workout"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#durationInMins"/>
-        <Class IRI="#Workout"/>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <Class IRI="#FreeWeights"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#experienceLevel"/>
@@ -1046,7 +2917,7 @@
         <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#membershipFee"/>
+        <DataProperty IRI="#membershipFeeInEuro"/>
         <Class IRI="#Membership"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -1054,15 +2925,7 @@
         <Class IRI="#Membership"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#membershipStartDate"/>
-        <Class IRI="#Membership"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#monthlyFee"/>
-        <Class IRI="#Monthly"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#programDuration"/>
+        <DataProperty IRI="#programDurationInDays"/>
         <Class IRI="#FitnessGoal"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -1070,20 +2933,12 @@
         <Class IRI="#Exercises"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#resistanceLevel"/>
-        <Class IRI="#PilatesEquipment"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#setCount"/>
         <Class IRI="#Exercises"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#speed"/>
-        <Class IRI="#CardioExercises"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#trimestralFee"/>
-        <Class IRI="#Trimestral"/>
+        <DataProperty IRI="#speedInKmH"/>
+        <Class IRI="#Exercises"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#weight"/>
@@ -1092,10 +2947,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#age"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#annualFee"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#caloriesBurned"/>
@@ -1110,16 +2961,24 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#distance"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <DataProperty IRI="#discountSenior"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#durationInHrs"/>
+        <DataProperty IRI="#discountStudent"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#distanceInKm"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#durationInMins"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#equipWeightInKg"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#experienceLevel"/>
@@ -1134,23 +2993,15 @@
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#membershipFee"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <DataProperty IRI="#membershipFeeInEuro"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#membershipRenewalDate"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#membershipStartDate"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#monthlyFee"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#programDuration"/>
+        <DataProperty IRI="#programDurationInDays"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1158,24 +3009,16 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#resistanceLevel"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#setCount"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#speed"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#trimestralFee"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <DataProperty IRI="#speedInKmH"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#weight"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
 </Ontology>
 
