@@ -1,2 +1,1 @@
-# KRST
-Project for Knowledge Representation and Semanthic Technologies
+# KRST Proj
